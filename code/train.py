@@ -106,7 +106,7 @@ LOG_DIR = args.LOG_DIR + '/logs_{}/{}_{}_embedding{}_alpha{}_mrg{}_{}_lr{}_batch
 wandb.init(project=args.dataset + '_ProxyAnchor', notes=LOG_DIR)
 wandb.config.update(args)
 
-os.chdir('../data/')
+os.chdir('Proxy-Anchor-CVPR2020/data/')
 data_root = os.getcwd()
 # Dataset Loader and Sampler
 if args.dataset != 'Inshop':
